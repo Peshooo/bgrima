@@ -1,0 +1,142 @@
+body {
+  background-color: #80bbff;
+}
+
+header {
+  background-color: #53669f;
+  height: 15vh;
+}
+
+#leftHeader {
+  height: 100%;
+  width: calc(100% * 2 / 9);
+  display: inline-block;
+  float: left;
+}
+
+#middleHeader {
+  height: 100%;
+  width: calc(100% * 5 / 9);
+  display: inline-block;
+  float: left;
+}
+
+#rightHeader {
+  height: 100%;
+  width: calc(100% * 2 / 9);
+  display: inline-block;
+  float: left;
+}
+
+#mainArea {
+  height: 75vh;
+  background-color: #53669f;
+}
+
+#leftMainArea {
+  height: 100%;
+  width: calc(100% * 2 / 9);
+  display: inline-block;
+  float: left;
+  background-color: #333333;
+}
+
+#middleMainArea {
+  height: 100%;
+  width: calc(100% * 5 / 9);
+  display: inline-block;
+  float: left;
+  overflow: auto;
+}
+
+#rightMainArea {
+  height: 100%;
+  width: calc(100% * 2 / 9);
+  display: inline-block;
+  float: left;
+  background-color: #333333;
+}
+
+footer {
+  background-color:  #53669f;
+  height: 10vh;
+}
+#siteLogoWrapper {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#siteLogo {
+  height: 80%;
+  margin-top: 3vh;
+}
+
+#siteLogo:hover {
+  cursor: pointer;
+}
+
+/*Copy paste*/
+.word-container {
+    margin-top: 3%;
+}
+
+.word-input {
+  margin-top: 5%
+}
+
+.rhyme-list {
+  list-style: none;
+  margin-top: 2%;
+  list-style-position: inside;
+  display: block;
+  overflow: scroll;
+  height: 60vh;
+}
+
+.single-rhyme {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 1%;
+  background: #b6b3e5;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #474747;
+}
+
+.progress {
+  min-width: 40%;
+  max-width: 40%;
+  margin-top: 1%;
+  float: right;
+}
+
+.rhymer-link:link {
+  color: white;
+  text-decoration: none;
+}
+
+.rhymer-link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.rhymer-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.rhymer-link:active {
+  color: white;
+  text-decoration: none;
+}
+
+.show-more-button {
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#rhymeButton {
+  border-radius: 0 5px 5px 0;
+}
