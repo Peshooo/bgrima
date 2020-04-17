@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import ="java.util.ArrayList"%>
 <%@ page import ="java.util.List"%>
-<%@ page import ="com.bgrima.server.models.Rhyme"%>
+<%@ page import ="com.bgrima.server.model.Rhyme"%>
 <!doctype html>
 
 <html>

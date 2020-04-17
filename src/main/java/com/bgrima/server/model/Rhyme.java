@@ -1,4 +1,4 @@
-package com.bgrima.server.models;
+package com.bgrima.server.model;
 
 public class Rhyme {
   private String word;

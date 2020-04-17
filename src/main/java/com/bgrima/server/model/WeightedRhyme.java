@@ -1,4 +1,4 @@
-package com.bgrima.server.models;
+package com.bgrima.server.model;
 
 public class WeightedRhyme implements Comparable<WeightedRhyme> {
   private String word;

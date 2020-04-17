@@ -1,4 +1,4 @@
-package com.bgrima.server.services;
+package com.bgrima.server.service;
 
 import org.junit.jupiter.api.Test;
 

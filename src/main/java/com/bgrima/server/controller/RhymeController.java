@@ -1,7 +1,6 @@
-package com.bgrima.server.controllers;
+package com.bgrima.server.controller;
 
-import com.bgrima.server.models.Rhyme;
-import com.bgrima.server.services.RhymeEngine;
+import com.bgrima.server.service.RhymeFinder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +13,11 @@ import java.util.ArrayList;
 
 @Controller
 public class RhymeController {
-  private RhymeEngine rhymeEngine;
+  private RhymeFinder rhymeFinder;
 
   @Autowired
-  public RhymeController(RhymeEngine rhymeEngine) {
-    this.rhymeEngine = rhymeEngine;
+  public RhymeController(RhymeFinder rhymeFinder) {
+    this.rhymeFinder = rhymeFinder;
   }
 
   @RequestMapping("/")
@@ -32,7 +31,7 @@ public class RhymeController {
     }
 
     modelAndView.addObject("wordPlaceholder", word);
-    modelAndView.addObject("rhymes", rhymeEngine.getRhymes(word));
+    modelAndView.addObject("rhymes", rhymeFinder.getRhymes(word));
 
     return modelAndView;
   }

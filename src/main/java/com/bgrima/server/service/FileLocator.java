@@ -1,11 +1,13 @@
-package com.bgrima.server.services;
+package com.bgrima.server.service;
 
-import static com.bgrima.server.models.Constants.*;
+import static com.bgrima.server.service.Utils.*;
 
-public class FileLocator {
+class FileLocator {
+  private FileLocator() {
+  }
 
   //Assumes it's a valid and transformed word
-  public static String getFilename(String word) {
+  static String getFilename(String word) {
     int vowelsCount = 0;
     char lastVowel = '?';
 
