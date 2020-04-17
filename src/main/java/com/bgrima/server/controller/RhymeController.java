@@ -8,7 +8,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 @Controller
@@ -21,7 +20,7 @@ public class RhymeController {
   }
 
   @RequestMapping("/")
-  public ModelAndView rhyme(HttpServletRequest request, HttpServletResponse response) throws FileNotFoundException {
+  public ModelAndView rhyme(HttpServletRequest request, HttpServletResponse response) {
     ModelAndView modelAndView = new ModelAndView("index");
     String word = request.getParameter("word");
 

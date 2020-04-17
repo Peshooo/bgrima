@@ -6,7 +6,6 @@ class FileLocator {
   private FileLocator() {
   }
 
-  //Assumes it's a valid and transformed word
   static String getFilename(String word) {
     int vowelsCount = 0;
     char lastVowel = '?';

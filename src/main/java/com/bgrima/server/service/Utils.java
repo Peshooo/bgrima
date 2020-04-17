@@ -138,7 +138,7 @@ class Utils {
   }
 
   private static int getIndexAfterAddingConsonantBlock(String word, int idx, List<String> blocks) {
-    StringBuffer currentBlock = new StringBuffer();
+    StringBuilder currentBlock = new StringBuilder();
 
     for (; idx < word.length(); idx++) {
       if (isVowel(word.charAt(idx))) {
@@ -155,7 +155,8 @@ class Utils {
 
   private static boolean haveSameSuffix(String a, String b) {
     for (int i = 0; i < a.length() && i < b.length(); i++) {
-      char letterA = a.charAt(a.length() - i - 1), letterB = b.charAt(b.length() - i - 1);
+      char letterA = a.charAt(a.length() - i - 1);
+      char letterB = b.charAt(b.length() - i - 1);
 
       if (letterA != letterB) {
         return false;

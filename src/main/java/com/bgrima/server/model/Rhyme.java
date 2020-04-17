@@ -13,6 +13,7 @@ public class Rhyme {
     return word;
   }
 
+  //Used in index.jsp to display everything beautifully
   public int getPercentage() {
     return percentage;
   }
