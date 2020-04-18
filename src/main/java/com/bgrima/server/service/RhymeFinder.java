@@ -10,7 +10,7 @@ import java.util.*;
 
 @Service
 public class RhymeFinder {
-  private static final int MAXIMUM_RHYMES_RETURNED = 30;
+  private static final int MAXIMUM_RHYMES_RETURNED = 50;
 
   private static final long LONGEST_COMMON_SUBSEQUENCE_OF_PHONEMES_WEIGHT = 12;
   private static final long LONGEST_COMMON_SUFFIX_OF_VOWELS_WEIGHT = 10000;
