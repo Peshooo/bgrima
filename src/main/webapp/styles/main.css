@@ -140,3 +140,43 @@ footer {
 #rhymeButton {
   border-radius: 0 5px 5px 0;
 }
+
+
+/*Social media config*/
+/* Style all font awesome icons */
+.fa {
+  font-size: 20px;
+  padding: 1vh;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 1.2vw;
+  margin-top: 2vh;
+  border-radius: 10%;
+  border: 1px solid white;
+}
+
+.fa:hover {
+   opacity: 0.7;
+   text-decoration: none;
+}
+
+.fa-github {
+  margin-left: 7vw;
+  background: #111111;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #dd2a7b;
+  color: white;
+}

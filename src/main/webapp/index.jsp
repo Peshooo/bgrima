@@ -8,6 +8,7 @@
 
 <head>
   <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>БГ Рима</title>
 
@@ -17,6 +18,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -61,6 +63,12 @@
   </div>
 
   <footer>
+    <div class="row col-4 mx-auto">
+        <a href="https://github.com/Peshooo/bgrima" class="fa fa-github"></a>
+        <a href="https://www.linkedin.com/in/petar-nyagolov-abb9b6193/" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UCn6D7te4cyixEgOWzn7EyPQ" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/pesho420/" class="fa fa-instagram"></a>
+    </div>
   </footer>
 
   <script src = "scripts/faviconEngine.js"></script>
