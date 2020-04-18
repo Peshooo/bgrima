@@ -32,7 +32,7 @@ public class RhymeFinder {
   private List<WeightedRhyme> getSortedWeightedRhymes(String filename, List<String> wordBlocks) {
     List<WeightedRhyme> weightedRhymes = new ArrayList<>();
 
-    try (Scanner scanner = new Scanner(new File(getClass().getClassLoader().getResource(filename).getFile()))) {
+    try (Scanner scanner = new Scanner(new File(filename))) {
       while (scanner.hasNext()) {
         String currentWord = scanner.nextLine();
 
