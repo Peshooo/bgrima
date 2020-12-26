@@ -1,5 +1,6 @@
 body {
   background-color: #80bbff;
+  overflow: hidden;
 }
 
 header {
@@ -90,9 +91,29 @@ footer {
   margin-top: 2%;
   list-style-position: inside;
   display: block;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   height: 60vh;
 }
+
+.rhyme-list::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+}
+
+.rhyme-list::-webkit-scrollbar
+{
+	width: 12px;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.rhyme-list::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #007bff;
+}
+
 
 .single-rhyme {
   margin-top: 1%;

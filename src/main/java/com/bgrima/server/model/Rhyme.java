@@ -1,20 +1,19 @@
 package com.bgrima.server.model;
 
 public class Rhyme {
-  private String word;
-  private int percentage;
+    private final String word;
+    private final long value;
 
-  public Rhyme(String word, int percentage) {
-    this.word = word;
-    this.percentage = percentage;
-  }
+    public Rhyme(String word, long value) {
+        this.word = word;
+        this.value = value;
+    }
 
-  public String getWord() {
-    return word;
-  }
+    public String getWord() {
+        return word;
+    }
 
-  //Used in index.jsp to display everything beautifully
-  public int getPercentage() {
-    return percentage;
-  }
+    public long getValue() {
+        return value;
+    }
 }

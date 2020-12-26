@@ -16,9 +16,13 @@
   <link rel = "stylesheet" type = "text/css" href = "styles/resetsheet.css"></link>
   <link rel = "stylesheet" type = "text/css" href = "styles/main.css"></link>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -51,9 +55,9 @@
           <li class="single-rhyme">
             <%=rhymes.get(i).getWord()%>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="<%=rhymes.get(i).getPercentage()%>"
-                  aria-valuemin="0" aria-valuemax="100" style="width:<%=rhymes.get(i).getPercentage()%>%">
-                  <%=rhymes.get(i).getPercentage()%>%
+                <div class="progress-bar" role="progressbar" aria-valuenow="<%=rhymes.get(i).getValue()%>"
+                  aria-valuemin="0" aria-valuemax="100" style="width:<%=rhymes.get(i).getValue()%>%">
+                  <%=rhymes.get(i).getValue()%>%
                 </div>
               </div>
           </li>

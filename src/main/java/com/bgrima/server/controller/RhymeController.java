@@ -1,37 +1,42 @@
 package com.bgrima.server.controller;
 
+import com.bgrima.server.model.Rhyme;
 import com.bgrima.server.service.RhymeFinder;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 @Controller
 public class RhymeController {
-  private RhymeFinder rhymeFinder;
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
-  @Autowired
-  public RhymeController(RhymeFinder rhymeFinder) {
-    this.rhymeFinder = rhymeFinder;
-  }
+    @RequestMapping("/")
+    public ModelAndView rhyme(HttpServletRequest request, HttpServletResponse response) {
+        String word = request.getParameter("word");
 
-  @RequestMapping("/")
-  public ModelAndView rhyme(HttpServletRequest request, HttpServletResponse response) {
-    ModelAndView modelAndView = new ModelAndView("index");
-    String word = request.getParameter("word");
-
-    if (word == null) {
-      modelAndView.addObject("rhymes", new ArrayList<>());
-      return modelAndView;
+        return getModelAndView(word);
     }
 
-    modelAndView.addObject("wordPlaceholder", word);
-    modelAndView.addObject("rhymes", rhymeFinder.getRhymes(word));
+    private ModelAndView getModelAndView(String word) {
+        ModelAndView modelAndView = new ModelAndView("index");
+        modelAndView.addObject("wordPlaceholder", word);
+        modelAndView.addObject("rhymes", getRhymes(word));
 
-    return modelAndView;
-  }
+        return modelAndView;
+    }
+
+    private List<Rhyme> getRhymes(String word) {
+        logger.info("Word is now {}", word);
+
+        return word == null
+                ? Collections.emptyList()
+                : RhymeFinder.getRhymes(word);
+    }
 }
